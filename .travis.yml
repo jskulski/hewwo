@@ -1,8 +1,12 @@
 language: python
 python:
-  - "2.7"
-install: "pip install -r requirements.txt"
+- '2.7'
+install: pip install -r requirements.txt
 script: py.test
 deploy:
   provider: heroku
-  api_key: 'f7ada7f854570b9028b831c4f8fb67a794ad1c2b'
+  api_key:
+    secure: B6UhnSXyuqadGgz6mTP9GiRQzdtyNSVAU0v47oXddtrYlsWqqfwAnEFvNjGRJL4R6lUUcvsywNDG/4CtXKYiBYdqz71SVK3O56GGyKNN+6Ua25bS6WWhHE6YV21xF8hRarJlLEJxnhmE+z0602iRifugTwJFLBmTMImt+ZWlBXGKGflF00i/FXKfEtyIUXxr4UVzPsnlOInr92fq3BUAlbYBNiqZYx7enRzwS2UkCsaWIwS9rVTWQmHpaZsSSpT5a78B3QPgaHYiNtiwTD38MIWa6aIVjw1iFSbWJBFDnW4/E4zdwCDKhA2OlyJ4Y45eLOL1JBOCNbbDYE2NQoIyDZE+hTI7UOluIEeUqELVZqKOm0iPi+kMRxzmpjUbyTpX2P7+alVeeZf6TXa59Bn2t+t8KhXpMLrxhtuvXRa6yK8oSS0OTy2gsrIpHe9XCRtHlHs7ji1IgABfSiOJFdfQG1AjfkYE/4mJFhqm1vshh9i5+Epv6yvEYp+Rt3W1KiGsh+Ocguvs1HXMjNNZ9w6tX2MOnRXWvFdoOlvFbYZArh97iXLPtUAkPuk3vTSA0HJWz/eVSxENB9brrGdUScZ+dG3zR0QLjN4AediqFcvfIzJWrDzyUgFb4mRCPv4e/NKXeDMoZXJV0uXDxKw9pitJwnSB65KUgj7SGM8gKe28kL0=
+  app: hewwo
+  on:
+    repo: jskulski/hewwo
